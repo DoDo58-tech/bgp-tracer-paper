@@ -33,11 +33,12 @@ count; abstentions are misses) and \emph{review-precision}
 falsifiable of the two; the supplementary material reports
 both for completeness.
 
-\begin{table}[h]
+\begin{table*}[t]
 \centering
-\setlength{\tabcolsep}{3pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
 \small
-\begin{tabular}{p{0.212\linewidth}p{0.578\linewidth}}
+\begin{tabular}{p{0.20\textwidth}p{0.74\textwidth}}
 \hline
 \textbf{Metric} & \textbf{Definition} \\ \hline
 \strict{} (Phase~1) & Fraction of events for which
@@ -80,7 +81,7 @@ this paper. The headline 86.7\% / 92.9\% numbers are
 metric. The supplementary material reports
 review-precision and the per-event Wilson CI.}
 \label{tab:metrics}
-\end{table}
+\end{table*}
 
 \subsection{Headline numbers}
 \label{sec:headline}
@@ -107,7 +108,7 @@ within the Wilson 95\% CI of the held-out set sample
 sample noise as well as with generalisation
 degradation (\Sectref{sec:heldout-stress}).}
 \label{tab:method-comparison}
-\begin{tabular}{lrr}
+\begin{tabular}{p{0.55\columnwidth}rr}
 \hline
 Method (or ablation) & \strict{} (all) & \strict{} (excl.\ NC) \\ \hline
 held-out set pre-optimization baseline & $21/30 = 70.0\%$ & $21/29 = 72.4\%$ \\
@@ -156,7 +157,8 @@ class-imbalance confound.}
 \begin{table}[h]
 \centering
 \small
-\begin{tabular}{lrrr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.50\columnwidth}rrr}
 \hline
 Ground-truth cause label & $n$ & Phase~1 strict & Phase~1 strict-rate \\ \hline
  & 7 & 6 & 85.7\% \\
@@ -184,11 +186,12 @@ given in \Tblref{tab:misses}.
 \subsubsection{Four-miss audit}
 \label{sec:misses}
 
-\begin{table}[h]
+\begin{table*}[t]
 \centering
-\setlength{\tabcolsep}{3pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
 \small
-\begin{tabular}{p{0.255\linewidth}llp{0.357\linewidth}}
+\begin{tabular}{p{0.18\textwidth}llp{0.42\textwidth}}
 \hline
 Event & GT & PRED & Why missed \\ \hline
  &
@@ -211,7 +214,7 @@ limits, one upstream-API degradation, one NC definition
 quirk. None recoverable by additional thresholds
 without leaking ground-truth labels.}
 \label{tab:misses}
-\end{table}
+\end{table*}
 
 \begin{figure}[t]
 \centering
@@ -269,7 +272,8 @@ strict-accuracy is recomputed on the same 29 events.
 \begin{table}[h]
 \centering
 \small
-\begin{tabular}{lrr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.60\columnwidth}rr}
 \hline
 Configuration & \strict{} (29 ev.) & $\Delta$ vs full \\
 \hline
@@ -408,7 +412,8 @@ cached detector data was insufficient for arbitration.
 \begin{table}[h]
 \centering
 \small
-\begin{tabular}{lr}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.75\columnwidth}r}
 \hline
 Metric & held-out set held-out \\
 \hline
